@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand:wght@500&family=Recursive:wght@600&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --base-color: #16003B;
+    --accent-color: #bbf7d0;
+    --app-color: #ddd;
+    --primary-color: #2185d0;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    background: var(--base-color);
+}
+
+ul {
+    list-style: none;
+}
+
+#app {
+    width: 75%;
+    margin: 3rem auto;
+    border: 1px solid #333;
+    border-radius: 30px;
+    padding: 3rem;
+    background: var(--app-color);
+}
+
+#app section {
+    width: 80%;
+    /* border: 1px solid var(--base-color); */
+}
+
+#todo-title,
+#todo-subtitle {
+    width: max-content;
+    text-align: center;
+}
+
+#todo-title {
+    font-size: 24px;
+    background: var(--accent-color);
+}
+
+#todo-subtitle {
+    font-size: 14px;
+}
+
+#app > * {
+    margin: auto;
+}
+
+#app > * + * { margin-top: 1rem; }
+
+#todo-input {
+    line-height: 2;
+    padding: 0 1rem;
+    border: none;
+    border-radius: 3px;
+    width: 300px;
+    margin: auto;
+}
+
+#todo-input::placeholder {
+    /* padding: 0 1rem; */
+    color: lime;
+}
+
+#todo-submit {
+    background: var(--primary-color);
+    height: min-content;
+    padding: 6px 10px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.input-wrapper {
+    width: max-content;
+    margin: auto;
+}
+
+#todo-output li {
+    padding-left: 3rem;
+}
+
+#todo-output li:nth-child(odd) { background: #bbb;}
+
+li.done {
+    text-decoration: line-through;
+}
