@@ -89,6 +89,7 @@ ul {
 
 #todo-output li {
     padding-left: 3rem;
+    margin-top: 0.5rem;
 }
 
 #todo-output li:nth-child(odd) { background: #bbb;}
