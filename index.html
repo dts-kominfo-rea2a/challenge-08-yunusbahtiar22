@@ -29,7 +29,7 @@
         <section>
           <ul id="todo-output">
           </ul>
-          <p style="text-align: center; color: #aaa; font-size: 11px; margin-top: 1rem;">double click to toggle "done" on and off</p>
+          <p style="text-align: center; color: #aaa; font-size: 11px; margin-top: 1rem;">double click on todo item to toggle "done" on and off</p>
         </section>
     </div>
 
@@ -59,14 +59,14 @@
       input.addEventListener('keypress', function(e) {
         if (e.key === 'Enter') {
           fnClickHandler(this.value);
-          input.value = '';
+          this.value = '';
         }
       });
 
       // other features
       output.addEventListener('dblclick', function(e) {
         event.target.classList.toggle('done');
-      })
+      });
     </script>
   </body>
 </html>
